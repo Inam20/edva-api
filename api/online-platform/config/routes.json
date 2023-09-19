@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/online-platform",
+      "handler": "online-platform.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/online-platform",
+      "handler": "online-platform.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/online-platform",
+      "handler": "online-platform.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

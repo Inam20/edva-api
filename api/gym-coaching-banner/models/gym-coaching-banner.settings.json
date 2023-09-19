@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "gym_coaching_banners",
+  "info": {
+    "name": "Gym Coaching Banner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bgImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-slides.slide"
+    },
+    "bannerBottomBoxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-boxes.box"
+    }
+  }
+}

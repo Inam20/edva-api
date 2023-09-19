@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/partner",
+      "handler": "partner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/partner",
+      "handler": "partner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/partner",
+      "handler": "partner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

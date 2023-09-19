@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teacher-requests",
+      "handler": "teacher-request.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-requests/count",
+      "handler": "teacher-request.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-requests/:id",
+      "handler": "teacher-request.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teacher-requests",
+      "handler": "teacher-request.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teacher-requests/:id",
+      "handler": "teacher-request.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teacher-requests/:id",
+      "handler": "teacher-request.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

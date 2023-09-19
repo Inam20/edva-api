@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kindergarten-services",
+      "handler": "kindergarten-services.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kindergarten-services",
+      "handler": "kindergarten-services.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kindergarten-services",
+      "handler": "kindergarten-services.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

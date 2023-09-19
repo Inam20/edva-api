@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/yoga-training-about",
+      "handler": "yoga-training-about.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/yoga-training-about",
+      "handler": "yoga-training-about.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/yoga-training-about",
+      "handler": "yoga-training-about.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

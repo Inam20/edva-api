@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/learning-management-banner",
+      "handler": "learning-management-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/learning-management-banner",
+      "handler": "learning-management-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/learning-management-banner",
+      "handler": "learning-management-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_pricing_cards_features_lists",
+  "info": {
+    "name": "featuresList",
+    "icon": "dice-five"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

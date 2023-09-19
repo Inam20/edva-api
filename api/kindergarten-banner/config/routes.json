@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kindergarten-banner",
+      "handler": "kindergarten-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kindergarten-banner",
+      "handler": "kindergarten-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kindergarten-banner",
+      "handler": "kindergarten-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/testimonials-style-one",
+      "handler": "testimonials-style-one.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/testimonials-style-one",
+      "handler": "testimonials-style-one.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/testimonials-style-one",
+      "handler": "testimonials-style-one.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

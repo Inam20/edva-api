@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kindergarten-feedback",
+      "handler": "kindergarten-feedback.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kindergarten-feedback",
+      "handler": "kindergarten-feedback.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kindergarten-feedback",
+      "handler": "kindergarten-feedback.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/yoga-training-banner",
+      "handler": "yoga-training-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/yoga-training-banner",
+      "handler": "yoga-training-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/yoga-training-banner",
+      "handler": "yoga-training-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

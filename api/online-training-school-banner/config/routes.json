@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/online-training-school-banner",
+      "handler": "online-training-school-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/online-training-school-banner",
+      "handler": "online-training-school-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/online-training-school-banner",
+      "handler": "online-training-school-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

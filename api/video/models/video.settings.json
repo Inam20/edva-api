@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "videos",
+  "info": {
+    "name": "video",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "videoLink": {
+      "type": "string"
+    },
+    "shapeHide": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

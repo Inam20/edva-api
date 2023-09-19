@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/courses-categories",
+      "handler": "courses-categories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/courses-categories/count",
+      "handler": "courses-categories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/courses-categories/:id",
+      "handler": "courses-categories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/courses-categories",
+      "handler": "courses-categories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/courses-categories/:id",
+      "handler": "courses-categories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/courses-categories/:id",
+      "handler": "courses-categories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

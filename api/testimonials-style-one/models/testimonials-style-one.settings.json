@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "testimonials_style_ones",
+  "info": {
+    "name": "Testimonials Style One",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feedback-items.item"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kindergarten-about",
+      "handler": "kindergarten-about.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kindergarten-about",
+      "handler": "kindergarten-about.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kindergarten-about",
+      "handler": "kindergarten-about.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

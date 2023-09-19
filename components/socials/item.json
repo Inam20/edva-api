@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_socials_items",
+  "info": {
+    "name": "item",
+    "icon": "share-alt-square"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

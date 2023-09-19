@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/download-courses-syllabus",
+      "handler": "download-courses-syllabus.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/download-courses-syllabus",
+      "handler": "download-courses-syllabus.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/download-courses-syllabus",
+      "handler": "download-courses-syllabus.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

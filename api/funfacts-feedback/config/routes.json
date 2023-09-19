@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/funfacts-feedback",
+      "handler": "funfacts-feedback.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/funfacts-feedback",
+      "handler": "funfacts-feedback.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/funfacts-feedback",
+      "handler": "funfacts-feedback.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/view-all-courses",
+      "handler": "view-all-courses.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/view-all-courses",
+      "handler": "view-all-courses.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/view-all-courses",
+      "handler": "view-all-courses.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

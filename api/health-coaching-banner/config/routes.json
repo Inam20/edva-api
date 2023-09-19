@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/health-coaching-banner",
+      "handler": "health-coaching-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/health-coaching-banner",
+      "handler": "health-coaching-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/health-coaching-banner",
+      "handler": "health-coaching-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

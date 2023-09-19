@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "feedback_with_bgs",
+  "info": {
+    "name": "Feedback With BG",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bgImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "allFeedback": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feedback-items.item"
+    }
+  }
+}

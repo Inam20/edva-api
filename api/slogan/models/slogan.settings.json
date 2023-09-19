@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "slogans",
+  "info": {
+    "name": "slogan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "desc": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "shapeHide": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

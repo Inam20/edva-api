@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/learning-management-about",
+      "handler": "learning-management-about.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/learning-management-about",
+      "handler": "learning-management-about.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/learning-management-about",
+      "handler": "learning-management-about.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

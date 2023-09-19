@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "courses",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "shortDesc": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "numberOfLesson": {
+      "type": "string"
+    },
+    "numberOfStudent": {
+      "type": "string"
+    },
+    "courses_category": {
+      "model": "courses-categories",
+      "via": "courses"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "videoSubtitle": {
+      "type": "enumeration",
+      "enum": [
+        "English",
+        "Spanish",
+        "Portuguese",
+        "Turkish",
+        "French",
+        "Italian",
+        "None"
+      ],
+      "default": "English"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "English",
+        "Spanish",
+        "Portuguese",
+        "Turkish",
+        "French",
+        "Italian"
+      ],
+      "default": "English"
+    },
+    "accessLimit": {
+      "type": "string",
+      "default": "Lifetime"
+    },
+    "certificate": {
+      "type": "boolean",
+      "default": false
+    },
+    "totalCourseDuration": {
+      "type": "string"
+    },
+    "course_videos": {
+      "collection": "course-video"
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false
+    },
+    "orders": {
+      "via": "courses",
+      "collection": "order"
+    },
+    "admin_user": {
+      "plugin": "admin",
+      "model": "user"
+    }
+  }
+}

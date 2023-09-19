@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "distance_learning_banners",
+  "info": {
+    "name": "Distance Learning Banner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "buttonIcon": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "bgImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "shapeHide": {
+      "type": "boolean",
+      "default": true
+    },
+    "bannerBottomBoxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-boxes.box"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/feedback-with-bg",
+      "handler": "feedback-with-bg.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/feedback-with-bg",
+      "handler": "feedback-with-bg.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/feedback-with-bg",
+      "handler": "feedback-with-bg.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

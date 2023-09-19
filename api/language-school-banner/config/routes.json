@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/language-school-banner",
+      "handler": "language-school-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/language-school-banner",
+      "handler": "language-school-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/language-school-banner",
+      "handler": "language-school-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

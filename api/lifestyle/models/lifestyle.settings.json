@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "lifestyles",
+  "info": {
+    "name": "lifestyle"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "string"
+    },
+    "lifestyleLists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "features-card.card"
+    }
+  }
+}

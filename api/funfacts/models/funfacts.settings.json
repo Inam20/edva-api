@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "funfacts",
+  "info": {
+    "name": "funfacts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "funfactsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "funfact-items.item"
+    }
+  }
+}

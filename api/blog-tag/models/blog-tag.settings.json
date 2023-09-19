@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_tags",
+  "info": {
+    "name": "Blog Tag",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "tag"
+    },
+    "blog_posts": {
+      "via": "blog_tag",
+      "collection": "blog-post"
+    }
+  }
+}

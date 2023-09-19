@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "testimonials_style_twos",
+  "info": {
+    "name": "Testimonials Style Two",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "allTestimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feedback-items.item"
+    }
+  }
+}

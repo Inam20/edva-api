@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productsorders",
+  "info": {
+    "name": "Products Order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payment": {
+      "type": "enumeration",
+      "enum": [
+        "paid",
+        "unpaid"
+      ],
+      "default": "unpaid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "delivered",
+        "hold"
+      ],
+      "default": "pending"
+    },
+    "totalPrice": {
+      "type": "decimal"
+    },
+    "products": {
+      "collection": "product",
+      "via": "productsorders",
+      "dominant": true
+    },
+    "users_permissions_user": {
+      "via": "productsorders",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

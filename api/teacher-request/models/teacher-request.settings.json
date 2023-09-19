@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teacher_requests",
+  "info": {
+    "name": "Teacher Request",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}

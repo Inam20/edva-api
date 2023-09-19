@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_services_card_cards",
+  "info": {
+    "name": "card",
+    "icon": "dice-six"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    }
+  }
+}

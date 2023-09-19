@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/elearning-school-banner",
+      "handler": "elearning-school-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/elearning-school-banner",
+      "handler": "elearning-school-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/elearning-school-banner",
+      "handler": "elearning-school-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

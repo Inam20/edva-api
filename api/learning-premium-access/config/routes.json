@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/learning-premium-access",
+      "handler": "learning-premium-access.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/learning-premium-access",
+      "handler": "learning-premium-access.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/learning-premium-access",
+      "handler": "learning-premium-access.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

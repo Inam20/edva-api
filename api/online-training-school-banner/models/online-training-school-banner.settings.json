@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "online_training_school_banners",
+  "info": {
+    "name": "Online Training School Banner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "subText": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bannerBottomBoxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-boxes.box"
+    },
+    "shapeHide": {
+      "type": "boolean",
+      "default": true
+    },
+    "popularSearch": {
+      "type": "component",
+      "repeatable": true,
+      "component": "popular-searches.item"
+    }
+  }
+}

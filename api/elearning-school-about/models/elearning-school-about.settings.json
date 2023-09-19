@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "elearning_school_abouts",
+  "info": {
+    "name": "eLearning School About",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "featuresList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-items.item"
+    },
+    "buttonIcon": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "shapeHide": {
+      "type": "boolean",
+      "default": true
+    },
+    "aboutImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-images.image"
+    }
+  }
+}

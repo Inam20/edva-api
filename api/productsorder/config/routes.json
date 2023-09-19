@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/productsorders",
+      "handler": "productsorder.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/productsorders/count",
+      "handler": "productsorder.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/productsorders/:id",
+      "handler": "productsorder.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/productsorders",
+      "handler": "productsorder.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/productsorders/:id",
+      "handler": "productsorder.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/productsorders/:id",
+      "handler": "productsorder.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_contact_info_infos",
+  "info": {
+    "name": "info",
+    "icon": "share-alt"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "hoursOfOperation1": {
+      "type": "string"
+    },
+    "hoursOfOperation2": {
+      "type": "string"
+    }
+  }
+}

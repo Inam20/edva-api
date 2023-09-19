@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/slogan",
+      "handler": "slogan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/slogan",
+      "handler": "slogan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/slogan",
+      "handler": "slogan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

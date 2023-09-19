@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/modern-schooling-about",
+      "handler": "modern-schooling-about.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modern-schooling-about",
+      "handler": "modern-schooling-about.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/modern-schooling-about",
+      "handler": "modern-schooling-about.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

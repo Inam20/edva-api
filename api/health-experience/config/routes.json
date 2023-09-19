@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/health-experience",
+      "handler": "health-experience.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/health-experience",
+      "handler": "health-experience.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/health-experience",
+      "handler": "health-experience.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

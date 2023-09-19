@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_popular_searches_items",
+  "info": {
+    "name": "item",
+    "icon": "search"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/health-feedback",
+      "handler": "health-feedback.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/health-feedback",
+      "handler": "health-feedback.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/health-feedback",
+      "handler": "health-feedback.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

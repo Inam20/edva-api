@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_widget_item_links",
+  "info": {
+    "name": "itemLinks",
+    "icon": "podcast"
+  },
+  "options": {},
+  "attributes": {
+    "linkText": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_funfact_items_items",
+  "info": {
+    "name": "item",
+    "icon": "circle"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

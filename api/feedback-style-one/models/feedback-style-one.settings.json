@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "feedback_style_ones",
+  "info": {
+    "name": "Feedback",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "allFeedback": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feedback-items.item"
+    },
+    "shapeHide": {
+      "type": "boolean",
+      "default": true
+    },
+    "bgImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/language-school-course-type",
+      "handler": "language-school-course-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/language-school-course-type",
+      "handler": "language-school-course-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/language-school-course-type",
+      "handler": "language-school-course-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

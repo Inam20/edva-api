@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "contactuses",
+  "info": {
+    "name": "Contact Us",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "pageBannerTitle": {
+      "type": "string"
+    },
+    "formTitle": {
+      "type": "string"
+    },
+    "subText": {
+      "type": "string"
+    },
+    "formBgImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "contactInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-info.info"
+    }
+  }
+}

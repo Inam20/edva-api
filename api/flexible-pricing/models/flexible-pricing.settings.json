@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "flexible_pricings",
+  "info": {
+    "name": "Flexible Pricing",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "pricing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing-cards.card"
+    }
+  }
+}

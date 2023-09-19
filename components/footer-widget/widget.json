@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_footer_widget_widgets",
+  "info": {
+    "name": "widget",
+    "icon": "list-ol",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "allItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer-widget.item-links"
+    }
+  }
+}

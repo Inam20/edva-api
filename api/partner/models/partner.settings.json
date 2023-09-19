@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "partners",
+  "info": {
+    "name": "partner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "partnerLists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partner-items.item"
+    },
+    "partnerSliderLists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partner-items.item"
+    }
+  }
+}

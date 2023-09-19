@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "modern_schooling_banners",
+  "info": {
+    "name": "Modern Schooling Banner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "buttonIcon": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "shapeHide": {
+      "type": "boolean",
+      "default": true
+    },
+    "bannerBottomBoxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-boxes.box"
+    },
+    "bannerBottomBoxesText": {
+      "type": "richtext"
+    }
+  }
+}

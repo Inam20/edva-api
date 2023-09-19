@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/training",
+      "handler": "training.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/training",
+      "handler": "training.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/training",
+      "handler": "training.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

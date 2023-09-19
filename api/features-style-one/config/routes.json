@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/features-style-one",
+      "handler": "features-style-one.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/features-style-one",
+      "handler": "features-style-one.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/features-style-one",
+      "handler": "features-style-one.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

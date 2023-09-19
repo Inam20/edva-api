@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/get-instant-courses",
+      "handler": "get-instant-courses.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/get-instant-courses",
+      "handler": "get-instant-courses.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/get-instant-courses",
+      "handler": "get-instant-courses.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

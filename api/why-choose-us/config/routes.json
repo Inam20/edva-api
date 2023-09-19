@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/why-choose-us",
+      "handler": "why-choose-us.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/why-choose-us",
+      "handler": "why-choose-us.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/why-choose-us",
+      "handler": "why-choose-us.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

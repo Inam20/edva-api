@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/selected-ages",
+      "handler": "selected-ages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/selected-ages",
+      "handler": "selected-ages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/selected-ages",
+      "handler": "selected-ages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

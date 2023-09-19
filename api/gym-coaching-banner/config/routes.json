@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gym-coaching-banner",
+      "handler": "gym-coaching-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gym-coaching-banner",
+      "handler": "gym-coaching-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gym-coaching-banner",
+      "handler": "gym-coaching-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

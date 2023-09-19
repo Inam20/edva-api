@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/distance-learning-about",
+      "handler": "distance-learning-about.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/distance-learning-about",
+      "handler": "distance-learning-about.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/distance-learning-about",
+      "handler": "distance-learning-about.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

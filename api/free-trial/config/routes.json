@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/free-trial",
+      "handler": "free-trial.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/free-trial",
+      "handler": "free-trial.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/free-trial",
+      "handler": "free-trial.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

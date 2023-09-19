@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/features-style-three",
+      "handler": "features-style-three.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/features-style-three",
+      "handler": "features-style-three.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/features-style-three",
+      "handler": "features-style-three.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vendor-certification-etraining-banner",
+      "handler": "vendor-certification-etraining-banner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vendor-certification-etraining-banner",
+      "handler": "vendor-certification-etraining-banner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vendor-certification-etraining-banner",
+      "handler": "vendor-certification-etraining-banner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

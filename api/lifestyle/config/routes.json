@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lifestyle",
+      "handler": "lifestyle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lifestyle",
+      "handler": "lifestyle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lifestyle",
+      "handler": "lifestyle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

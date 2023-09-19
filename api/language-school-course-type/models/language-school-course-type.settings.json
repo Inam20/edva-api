@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "language_school_course_types",
+  "info": {
+    "name": "language School Course Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "courseType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "features-card.card"
+    }
+  }
+}

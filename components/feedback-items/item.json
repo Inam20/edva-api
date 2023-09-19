@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_feedback_items_items",
+  "info": {
+    "name": "item",
+    "icon": "dot-circle"
+  },
+  "options": {},
+  "attributes": {
+    "feedbackQuote": {
+      "type": "text"
+    },
+    "authorImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "authorName": {
+      "type": "string"
+    },
+    "authorDesignation": {
+      "type": "string"
+    }
+  }
+}

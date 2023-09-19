@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/flexible-pricing",
+      "handler": "flexible-pricing.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/flexible-pricing",
+      "handler": "flexible-pricing.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/flexible-pricing",
+      "handler": "flexible-pricing.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

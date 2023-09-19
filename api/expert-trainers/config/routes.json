@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/expert-trainers",
+      "handler": "expert-trainers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/expert-trainers",
+      "handler": "expert-trainers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/expert-trainers",
+      "handler": "expert-trainers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

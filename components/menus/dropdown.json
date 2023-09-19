@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_menus_dropdowns",
+  "info": {
+    "name": "dropdown",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "menuName": {
+      "type": "string"
+    },
+    "menuLink": {
+      "type": "string"
+    }
+  }
+}

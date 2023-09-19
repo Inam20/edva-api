@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_expert_trainer_trainers",
+  "info": {
+    "name": "trainer",
+    "icon": "users",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "allSocials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "socials.item"
+    }
+  }
+}

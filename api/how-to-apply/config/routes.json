@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/how-to-apply",
+      "handler": "how-to-apply.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/how-to-apply",
+      "handler": "how-to-apply.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/how-to-apply",
+      "handler": "how-to-apply.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

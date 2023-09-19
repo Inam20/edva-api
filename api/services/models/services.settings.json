@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "services",
+  "info": {
+    "name": "services",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "string"
+    },
+    "bgImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "allServices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "services-card.card"
+    }
+  }
+}
