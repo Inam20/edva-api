@@ -53,4 +53,38 @@ module.exports = {
         const data = await strapi.plugins['users-permissions'].services.user.edit({ id }, updateData);
         ctx.send(data);
     },
+
+    async create(ctx) {
+        const { name, email, phoneNumber, message } = ctx.request.body;
+    
+        // Validation checks
+        if (!name || !email || !phoneNumber || !message) {
+          return ctx.badRequest('Please provide valid values for name, email, phoneNumber, and message.');
+        }
+    
+        // Update contact details in the database
+        const contactInbox = await strapi.services['contact-inbox'].create({
+          name,
+          email,
+          phoneNumber,
+          message,
+        });
+    
+        // Send email notification
+        try {
+          await strapi.plugins['email'].services.email.send({
+            to: 'info@finiacademy.com', // Your email address
+            from: 'info@finiacademy.com',
+            subject: 'New Contact Form Submission',
+            text: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}`,
+            html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Phone Number: ${phoneNumber}</p><p>Message: ${message}</p>`,
+          });
+          console.log('Contact form submission email sent successfully');
+        } catch (error) {
+          console.error('Error sending contact form submission email', error);
+        }
+    
+        // Respond with the sanitized contact inbox data
+        ctx.send(sanitizeEntity(contactInbox, { model: strapi.models['contact-inbox'] }));
+      },
 };
