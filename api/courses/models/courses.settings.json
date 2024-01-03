@@ -98,6 +98,16 @@
     "admin_user": {
       "plugin": "admin",
       "model": "user"
+    },
+    "course_pdf": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
