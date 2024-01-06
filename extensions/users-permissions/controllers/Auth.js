@@ -4,10 +4,10 @@ const { sanitizeEntity } = require('strapi-utils');
 
 module.exports = {
   async register(ctx) {
-    const { email, username, password } = ctx.request.body;
+    const { email, username, phoneNumber, userType, password } = ctx.request.body;
 
     // Validate input (customize as needed)
-    if (!email || !username || !password) {
+    if (!email || !username || !phoneNumber || !userType || !password) {
       return ctx.badRequest('Please provide valid email, username, and password.');
     }
 
@@ -21,6 +21,8 @@ module.exports = {
     const user = await strapi.plugins['users-permissions'].services.user.add({
       username,
       email,
+      phoneNumber,
+      userType,
       password,
     });
 
@@ -30,8 +32,8 @@ module.exports = {
         to: 'info@finiacademy.com',
         from: 'info@finiacademy.com',
         subject: 'New User Registered',
-        text: `Name: ${user.username} and Email: ${user.email} just registered. `,
-        html: `<p>Name: ${user.username} and Email: ${user.email} just registered.</p>`,
+        text: `Name: ${user.username}\nEmail: ${user.email}\nPhone Number: ${phoneNumber}\nUser Type: ${userType} just registered. `,
+        html: `<p>Name: ${user.username}\nEmail: ${user.email}\nPhone Number: ${phoneNumber}\nUser Type: ${userType} just registered.</p>`,
       });
       console.log('Registration email sent successfully');
     } catch (error) {

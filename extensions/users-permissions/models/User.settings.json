@@ -84,6 +84,13 @@
     "orders": {
       "via": "users_permissions_user",
       "collection": "order"
+    },
+    "userType": {
+      "type": "enumeration",
+      "enum": [
+        "student",
+        "working"
+      ]
     }
   }
 }
