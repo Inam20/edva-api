@@ -31,7 +31,7 @@ module.exports = {
         .get();
 
         const { id } = jwt.verify(ctx.request.body.token, jwtSecret)
-        const { name, email, phoneNumber, message } = ctx.request.body;
+        const { name, email, phoneNumber, userType, message } = ctx.request.body;
         const user = await strapi.plugins['users-permissions'].services.user.fetch({
             id
         });
@@ -44,6 +44,9 @@ module.exports = {
         if (_.has(ctx.request.body, 'phoneNumber') && !phoneNumber){
             return ctx.badRequest('phoneNumber.notNull');
         }
+        if (_.has(ctx.request.body, 'userType') && !userType) {
+          return ctx.badRequest('userType.notNull');
+        }
         if (_.has(ctx.request.body, 'message') && !message){
             return ctx.badRequest('message.notNull');
         }
@@ -55,11 +58,11 @@ module.exports = {
     },
 
     async create(ctx) {
-        const { name, email, phoneNumber, message } = ctx.request.body;
+        const { name, email, phoneNumber, userType, message } = ctx.request.body;
     
         // Validation checks
-        if (!name || !email || !phoneNumber || !message) {
-          return ctx.badRequest('Please provide valid values for name, email, phoneNumber, and message.');
+        if (!name || !email || !phoneNumber || !userType || !message) {
+          return ctx.badRequest('Please provide valid values for name, email, phoneNumber, userType and message.');
         }
     
         // Update contact details in the database
@@ -67,6 +70,7 @@ module.exports = {
           name,
           email,
           phoneNumber,
+          userType,
           message,
         });
     
@@ -76,8 +80,8 @@ module.exports = {
             to: 'info@finiacademy.com', // Your email address
             from: 'info@finiacademy.com',
             subject: 'New Contact Form Submission',
-            text: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}`,
-            html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Phone Number: ${phoneNumber}</p><p>Message: ${message}</p>`,
+            text: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nUser Type: ${userType}\nMessage: ${message}`,
+            html: `<p>Name: ${name}</p>\n<p>Email: ${email}</p>\n<p>Phone Number: ${phoneNumber}</p>\n<p>User Type: ${userType}</p>\n<p>Message: ${message}</p>`,
           });
           console.log('Contact form submission email sent successfully');
         } catch (error) {
